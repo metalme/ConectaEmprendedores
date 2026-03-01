@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "conecta-emprendedores",
+			"path": "../../conecta-emprendedores"
+		}
+	],
+	"settings": {}
+}

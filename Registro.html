@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario - Conecta Emprendedores</title>
+    <link rel="stylesheet" href="EstilosRegistro.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+</head>
+<body>
+
+<body>
+  <div class="container">
+
+    <!-- Columna izquierda -->
+    <div class="left-side">
+      <div class="menu" onclick="toggleMenu()">
+        <span class="menu-icon">☰</span> Menu
+      </div>
+      <img src="foto 2.png" alt="Personas trabajando" class="bg-img">
+
+      <!-- Sidebar oculto -->
+      <div id="sidebar" class="sidebar">
+        <ul>
+          <li><a href="Inicio.html">Inicio</a></li>
+          <li><a href="emprendedores.html">Emprendedores</a></li>
+          <li><a href="inversores.html">Inversores</a></li>
+          <li><a href="Recursos.html">Recursos</a></li>
+          <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Íconos sociales -->
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="x.png" alt="X"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="right-side">
+      <div class="login-box">
+        <img src="logo2.png" alt="Logo Conecta Emprendedores" class="logo">
+
+        <h2>Registro de Usuario</h2>
+        <p>Por favor, inserte sus datos</p>
+
+        <form>
+          <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" placeholder="Nombre y apellido" required>
+          </div>
+          <div class="input-group">
+
+            <span class="icon">🪪</span>
+            <input type="number" placeholder="Documento de identidad" required>
+          </div>
+            <div class="input-group">
+                <span class="icon">📧</span>
+                <input type="email" placeholder="Correo electrónico" required>
+
+            </div>
+
+        <div class="input-group">
+            <span class="icon">📞</span>
+            <input type="tel" placeholder="Número de teléfono" required>
+        </div>
+
+         <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+
+          <button type="submit" class="btn">Next →</button>
+        </form>
+
+        <p class="register-text">
+          Ya tengo una cuenta <a href="Inicio de sesion.html">Iniciar Sesion</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+
+    // alterna la clase active
+    sidebar.classList.toggle("active");
+
+    // si se abrió, programar cierre en 2 segundos
+    if (sidebar.classList.contains("active")) {
+      setTimeout(() => {
+        sidebar.classList.remove("active");
+      }, 2000); // 2000 ms = 2 segundos
+    }
+  }
+</script>
+</body>
+</body>
+</html>
