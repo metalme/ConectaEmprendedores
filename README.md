@@ -1,3 +1,2 @@
 # ConectaEmprendedores
-Desarrollo de Web y Aplicacion
-hola Mundo 
+Desarrollo de Web y Aplicacion 
